@@ -1,0 +1,96 @@
+.feedbacks
+  background-color: #000000
+  &-block
+    position: relative
+    padding-bottom: 136px
+    &__label
+      position: absolute
+      top: -26px
+      left: -32px
+      padding: 15px 64px
+      +prox_bold
+  &-slider
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      width: 470px
+      padding-top: 110px
+      outline: none !important
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      text-align: center
+    &__image
+      margin: auto
+      margin-bottom: 12px
+    &__name
+      display: block
+      color: $secondary-color
+      font-size: 20px
+      font-weight: 400
+      line-height: 28px
+      margin-bottom: 15px
+    &__descr
+      display: block
+      margin: auto
+      max-width: 470px
+      color: #fffffd
+      font-size: 20px
+      font-weight: 400
+      line-height: 28px
+    .slick-dots
+      bottom: -116px
+.favours
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  margin-top: 24px
+  &__likeicon
+    width: 20px
+    height: 20px
+    margin-right: 7px
+  &__dislikeicon
+    width: 20px
+    height: 20px
+    margin-right: 7px
+  &__number
+    color: #fefbfb
+    font-size: 15px
+    font-weight: 400
+    line-height: 28px
+    margin-right: 29px
+@media screen and (max-width: 768px)
+  .feedbacks
+    &-block
+      padding-bottom: 100px
+      &__label
+        position: relative
+        margin: auto
+        font-size: 16px
+        padding: 10px 30px
+        top: -24px
+        text-align: center
+@media screen and (max-width: 567px) 
+  .feedbacks
+    &-block
+      padding-bottom: 50px
+      &__label
+        max-width: 135px
+        font-size: 13px
+        padding: 8px 24px
+        top: -21px
+        left: 5px
+    &-slider
+      &__name
+        font-size: 17px
+        line-height: 14px
+      &__descr
+        font-size: 16px
+        line-height: 23px
+        max-width: 80%
+    .slick-dots
+      bottom: -30px
+
+
+

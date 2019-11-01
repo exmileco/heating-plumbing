@@ -1,0 +1,30 @@
+{
+  "name": "repair",
+  "version": "1.0.0",
+  "description": "Сайт для компании \"Ремонт Квартир\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exmileco/repair.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exmileco/repair/issues"
+  },
+  "homepage": "https://github.com/exmileco/repair#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-ftp": "^1.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-replace-async": "0.0.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinifier": "^1.0.2"
+  }
+}

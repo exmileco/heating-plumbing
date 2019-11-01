@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Proxima Nova - Regular';
+  src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova - Regular It';
+  src: url('../fonts/ProximaNova/ProximaNova-RegularIt.eot');
+  src: url('../fonts/ProximaNova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova/ProximaNova-RegularIt.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-RegularIt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova - Bold';
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova - Extrabld';
+  src: url('../fonts/ProximaNova/ProximaNova-Extrabld.eot');
+  src: url('../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova/ProximaNova-Extrabld.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Extrabld.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin prox_reg {
+  font-family: 'Proxima Nova - Regular', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+@mixin prox_regit {
+  font-family: 'Proxima Nova - Regular It', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+@mixin prox_bold {
+  font-family: 'Proxima Nova - Bold', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+@mixin prox_extrabold {
+  font-family: 'Proxima Nova - Bold', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+}

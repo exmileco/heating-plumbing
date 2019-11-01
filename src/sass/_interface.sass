@@ -1,0 +1,116 @@
+* 
+  margin: 0 
+  padding: 0 
+  box-sizing: border-box 
+body 
+  +prox_reg
+// line-height: 1
+img 
+  display: block 
+  max-width: 100% 
+.container 
+  width: 1170px 
+  margin: 0 auto
+.section 
+  padding: 60px 0 
+  &__label
+    background-color:#ffc800
+    border: none 
+    max-width: 244px
+    font-size: 28px
+    font-weight: 400
+    line-height: 28px
+    text-transform: uppercase
+.button
+  background-color:#ffc800
+  border: none 
+  padding: 10px 15px 
+  font-size: 20px
+  &:focus
+    outline: none !important
+.input
+  outline: none !important
+  width: 301px
+  border: none
+  border-bottom: 1px solid #000000
+  margin-bottom: 40px
+  padding-bottom: 4px
+  font-size: 18px
+  +prox_regit
+  &-group
+    position: relative
+    width: 100%
+.form
+  padding: 43px 31px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  &__button
+    margin-top: 25px
+    padding: 15px 59px
+    color: #020202
+    font-size: 20px
+    font-weight: 400
+    line-height: 28px
+    text-transform: uppercase
+span.invalid
+  text-align: left
+  position: absolute
+  top: 26px
+  left: 0
+  color: red
+  font-size: 1em
+  font-weight: 800
+  width: 100%
+@media screen and (max-width: 1200px) 
+  .container 
+    width: 760px 
+    width: 90% 
+  .input
+    width: 230px
+    font-size: 15px
+  .button
+    margin-top: 0
+    font-size: 16px
+    padding: 14px 30px
+  span.invalid
+    font-size: 0.8em
+@media screen and (max-width: 991px) 
+  .container 
+    max-width: 760px 
+    width: 90% 
+@media screen and (max-width: 768px) 
+  .container 
+    max-width: 580px 
+    width: 90% 
+  .input
+    width: 170px
+    padding: 2px
+    margin-bottom: 13px
+    font-size: 11px
+  .button
+    margin-top: 12px
+    font-size: 14px
+    padding: 6px 10px
+  span.invalid
+    font-size: 0.6em
+    top: 20px
+@media screen and (max-width: 567px) 
+  .container 
+    max-width: 487px 
+    width: 95% 
+  .form
+    padding: 20px
+  span.invalid
+    font-size: 0.6em
+@media screen and (max-width: 320px) 
+  .container 
+    max-width: 280px 
+    width: 95% 
+  span.invalid
+    font-size: 0.6em
+@media (min-width: 992px)
+ .button
+    &:hover
+      background-color: lighten(#ffc800, 10%)
+      cursor: pointer

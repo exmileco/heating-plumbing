@@ -1,0 +1,46 @@
+.submodal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  z-index: 2
+  display: none
+  &_active
+    display: flex
+  &-thankyou
+    position: relative
+    margin: auto
+    max-width: 400px
+    width: 65%
+    min-height: 260px
+    background-color: #ffffff
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+      width: 35px
+      height: 35px
+      border: none
+      color: #ffffff
+      background-color: $secondary-color
+      outline: none !important
+      font-size: 2em
+      +prox-bold
+    &__title
+      text-align: center
+      font-size: 22px
+      line-height: 33px
+      +prox_reg
+@media screen and (min-width: 992px)
+  .submodal
+    &-thankyou
+      &__close
+        &:hover
+          color: #000000
+          cursor: pointer

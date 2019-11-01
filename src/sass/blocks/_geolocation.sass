@@ -1,0 +1,48 @@
+.geolocation
+  position: relative
+.map
+  width: 100%
+  height: 666px
+.location
+  position: absolute
+  top: 40px
+  left: 60px
+  padding: 50px
+  z-index: 2
+  background-color: #ffffff
+  box-shadow: 3px -3px 10px 1px #888888
+  &__title
+    display: block
+    color: #030303
+    font-size: 22px
+    font-weight: 400
+    line-height: 28px
+    text-transform: uppercase
+    margin-bottom: 20px
+    +prox_extrabold
+  &__address
+    display: block
+    color: #030303
+    font-size: 18px
+    font-weight: 400
+    line-height: 22px
+@media screen and (max-width: 768px)
+  .map
+    height: 500px
+  .location
+    padding: 30px
+    &__title
+      font-size: 18px
+    &__address
+      font-size: 14px
+@media screen and (max-width: 567px)
+  .map
+    height: 400px
+  .location
+    padding: 10px
+    left: 42px
+    &__title
+      font-size: 18px
+      margin-bottom: 15px
+    &__address
+      font-size: 14px

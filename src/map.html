@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Бригада по монтированию отопления и сантехники</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Yandex.Metrika counter -->
+  <script
+    type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(55988641, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/55988641" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
+  <div class="navbar">
+    <div class="container">
+      <div class="menu-icon-wrapper">
+        <div class="menu-icon"></div>
+      </div>
+      <div class="navbar-block">
+        <div class="navbar__logo">
+          <a href="./"><img src="img/hero/logoк.png" alt="Логотип компании"></a>
+        </div>
+        <div class="navbar-menu">
+          <ul class="navbar-menu__list">
+            <li class="navbar-menu__item"><a href="#services" class="navbar-menu__link">Услуги</a></li>
+            <li class="navbar-menu__item"><a href="#advantages" class="navbar-menu__link">Цены</a></li>
+            <li class="navbar-menu__item"><a href="#feedbacks" class="navbar-menu__link">Отзывы</a></li>
+            <li class="navbar-menu__item"><a href="#news" class="navbar-menu__link">Новости</a></li>
+            <li class="navbar-menu__item"><a href="#contacts" class="navbar-menu__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="navbar-menu__contacts">
+          <div class="navbar-menu__phoneicon"><img src="img/hero/phone-receiver.png" alt="Иконка телефона"></div>
+          <a href="tel:+7(863)342-22-21" class="navbar-menu__phone">+7 (863) <span class="navbar-menu__phonebold">342-22-21</span></a>
+          <button class="button navbar-menu__button" onclick="ym(55988641, 'reachGoal', 'button'); return true;" id="button">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section class="geolocation">
+      <div class="map" id="singlemap"></div>
+      <div class="location">
+        <span class="location__title">Наш адрес:</span>
+        <span class="location__address">г. Москва, ул. Советская 48 корп. 3</span>
+      </div>
+    </section>
+    <div class="popup" id="popup">
+      <div class="popup-dialog">
+        <span class="popup-dialog__title">оставьте <span class="popup-dialog__title--yellow">заявку</span></span>
+        <form action="mail.php" method="POST" class="form" id="popup-form">
+          <div class="input-group">
+            <input type="text" autocomplete="off" name="popup_username" class="input form__input"
+              placeholder="Введите Ваше имя">
+          </div>
+          <div class="input-group">
+            <input type="tel" autocomplete="off" name="popup_phone" class="input form__input phone"
+              placeholder="Введите Ваш номер телефона"></div>
+          <button class="button form__button" id="popup-button">заказать звонок</button>
+        </form>
+        <button class="popup-dialog__close" id="popup-close">&times;</button>
+      </div>
+    </div>
+    <div class="submodal" id="submodal">
+      <div class="submodal-thankyou">
+        <h4 class="submodal-thankyou__title">Спасибо за заявку, скоро мы вам перезвоним.</h4>
+        <button class="submodal-thankyou__close" id="close-thanks">&times;</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer-block">
+        <div class="address">
+          <img src="img/footer/placeholder.png" alt="геометка" class="address__icon">
+          <a href="map.html" class="address__text">г. Москва, ул. Советская 48 корп. 3</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://vk.com/" class="fa fa-vk"></a>
+          <a href="https://ok.ru/" class="fa fa-odnoklassniki"></a>
+        </div>
+        <div class="contacts">
+          <div class="contacts-email">
+            <img src="img/footer/close-envelope.png" alt="email" class="contacts-email__emailicon">
+            <a href="mailto:infosanteh@gmail.com" class="contacts-email__email">infosanteh@gmail.com</a>
+          </div>
+          <div class="contacts-phone">
+            <img src="img/footer/phone-receiver.png" alt="телефон" class="contacts-phone__phoneicon">
+            <a href="tel:+7863342-22-21" class="contacts-phone__phone">+7 (863) <span class="contacts-phone__phone--bold">342-22-21</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+.hero
+  width: 0 auto
+  padding-bottom: 133px
+  height: 742px
+  position: relative
+  &-block
+    height: 742px
+    padding-bottom: 140px
+    position: relative
+    z-index: 1
+    &__title
+      margin: 0
+      padding-top: 204px
+      color: $secondary-color
+      font-size: 35px
+      font-weight: 400
+      text-transform: uppercase
+      margin-bottom: 4px
+      letter-spacing: 0.7px
+      +prox-bold
+    &__subtitle
+      display: block
+      color: #fffffe
+      font-size: 35px
+      font-weight: 400
+      line-height: 55px
+      margin-bottom: 18px
+      +prox-reg
+    &__text
+      display: block
+      opacity: 0.42
+      color: #fffffe
+      font-size: 20px
+      font-weight: 300
+      line-height: 28px
+      margin-bottom: 49px
+      max-width: 1106px
+    &__button
+      padding: 13px 38px
+      color: #030303
+      font-size: 18px
+      text-transform: uppercase
+      +prox-bold
+.slider
+  max-width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  &__item
+    max-height: 742px
+  &__image
+    filter: brightness(35%)
+.slick-dots
+  z-index: 2
+@media screen and (max-width: 1200px)
+  .hero
+    height: calc(100vw*0.56)
+    // margin-bottom: 50px
+    &-block
+      height: calc(100vw*0.56)
+      padding-bottom: 50px
+      &__title
+        padding-top: 80px
+        font-size: 27px
+      &__subtitle
+        font-size: 27px
+      &__text
+        font-size: 15px
+      &__button
+        padding: 10px 30px
+        font-size: 16px
+@media screen and (max-width: 991px)
+  .hero
+    height: calc(100vw*0.56)
+    &-block
+      height: calc(100vw*0.56)
+      &__title
+        padding-top: 80px
+        font-size: 27px
+      &__subtitle
+        font-size: 27px
+      &__text
+        font-size: 15px
+      &__button
+        padding: 10px 30px
+        font-size: 16px
+@media screen and (max-width: 768px) 
+  .hero
+    height: calc(100vw*0.56)
+    padding-bottom: 50px
+    &-block
+      height: calc(100vw*0.56)
+      margin-bottom: 0
+      &__title
+        padding-top: 2em
+        font-size: 1.6em
+      &__subtitle
+        font-size: 1.6em
+        line-height: 1em
+      &__text
+        font-size: 1em
+        line-height: 1em
+        margin-bottom: 2em
+      &__button
+        padding: 10px 30px
+        font-size: 1em
+@media screen and (max-width: 567px) 
+  .hero
+    height: calc(100vw*0.56)
+    padding-bottom: 50px
+    &-block
+      height: calc(100vw*0.56)
+      // margin-bottom: 50px
+      &__title
+        padding-top: 2em
+        font-size: 1em
+        line-height: 1em
+      &__subtitle
+        font-size: 1em
+        line-height: 1em
+      &__text
+        font-size: 13px
+        line-height: 1
+        margin-bottom: 2em
+      &__button
+        // width: 100%
+        padding: 8px 18px
+        font-size: 0.8em
+  .slider
+    &__image
+      max-width: 100%
+      margin: auto
+  .slick-dots
+    bottom: 20px
+@media screen and (max-width: 320px) 
+  .hero
+    padding-bottom: 0
+    &-block
+      padding-bottom: 0
+      &__title
+        padding-top: 2em
+        font-size: 0.9em
+      &__subtitle
+        font-size: 1em
+        line-height: 1em
+        margin-bottom: 0.4em
+      &__button
+        padding: 8px 18px
+        font-size: 0.8em
+  .slider 
+    &__image
+      max-width: 310px
+      margin: auto
+  .slick-dots
+    bottom: 5px
+    right: 10px
+
+@media (max-width: 400px)
+  .hero
+    &-block
+      &__text
+        display: none

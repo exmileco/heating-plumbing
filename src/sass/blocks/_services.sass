@@ -1,0 +1,144 @@
+.services
+  background-color: #f1f1f1
+  margin-top: 133px
+  &-block
+    position: relative
+    &__label
+      position: absolute
+      top: -28px
+      left: -33px
+      padding: 15px 68px 
+      +prox_bold
+    &__cards
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      padding-top: 104px
+      padding-bottom: 97px
+    &__card
+      margin-right: 5px
+      margin-bottom: 21px
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: relative
+    &__image
+      max-width: 377px
+      filter: brightness(70%)
+    &__text
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      &:hover
+        color: #000000
+    &__descr
+      flex-basis: 100%
+      max-width: 70%
+      display: block
+      margin-top: 60px
+      margin-bottom: 24px
+      color: #fcfafa
+      font-size: 20px
+      font-weight: 400
+      line-height: 26px
+      text-align: center
+    &__button
+      padding: 8px 15px
+      width: 138px
+      font-size: 15px
+      text-transform: uppercase
+      .services-block__btnprice
+        display: none
+
+@media screen and (max-width: 1200px)
+  .services
+    margin-top: 80px
+    &-block
+      &__image
+        max-width: 287px
+        margin: auto
+      &__card
+        margin-right: 10px
+        margin-bottom: 10px
+        &s
+          justify-content: center
+      &__descr
+        margin-top: 2em
+        max-width: 90%
+        font-size: 1.2em
+      &__button
+@media screen and (max-width: 991px)
+  .services
+    &-block
+      &__label
+        top: -24px
+        left: -10px
+@media screen and (min-width: 991px)
+  .services
+    &-block
+      &__card
+        &:hover
+          .services-block__image
+            filter: none
+          .services-block__descr
+            color: #000000
+          .services-block__button
+            background-color: #000000
+            color: #ffffff
+            cursor: pointer
+          .services-block__btnprice
+            display: inline
+          .services-block__btndefault
+            display: none
+@media screen and (max-width: 768px) 
+  .services
+    &-block
+      &__label
+        position: relative
+        margin: auto
+        font-size: 16px
+        padding: 10px 30px
+        top: -24px
+        text-align: center
+        // left: -10px
+      &__image
+        max-width: 245px
+        margin: auto
+      &__descr
+        margin-top: 2em
+        margin-bottom: 1em
+        max-width: 90%
+        font-size: 1.1em
+@media screen and (max-width: 567px) 
+  .services
+    margin-top: 70px
+    &-block
+      &__label
+        max-width: 135px
+        font-size: 13px
+        padding: 8px 24px
+        top: -21px
+        left: 5px
+      &__image
+        max-width: 100%
+        margin: auto
+@media screen and (max-width: 320px) 
+  .services 
+    margin-top: 50px
+    &-block
+      &__card
+        margin-right: 0
+        margin-bottom: 10px
+        &s
+          padding: 32px 0
+      &__image
+        max-width: 100%
+        margin: auto
+      &__descr
+        margin-top: 2em
+        margin-bottom: 1em
+        max-width: 90%
+        font-size: 1.1em

@@ -1,0 +1,156 @@
+.footer
+  background-color: #000000
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 47px 0
+.address
+  display: flex
+  align-items: center
+  &__icon
+    max-width: 15px
+    margin-right: 13px
+  &__text
+    text-decoration: none
+    color: #fdfcfc
+    font-size: 20px
+    font-weight: 400
+    line-height: 28px
+.fa
+  padding: 0
+  font-size: 20px
+  width: 27px
+  height: 27px
+  border: none
+  border-radius: 50%
+  text-decoration: none
+  margin: 0 5px
+  display: flex
+  justify-content: center
+  align-items: center
+.fa-instagram 
+  background: #ffffff
+  color: #000000
+.fa-vk
+  background: #ffffff
+  color: #000000
+.fa-odnoklassniki
+  background: #ffffff
+  color: #000000
+
+.socials
+  display: flex
+  justify-content: space-between
+  align-items: center
+.contacts
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  &-email
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &__emailicon
+      max-width: 20px
+      margin-right: 10px
+    &__email
+      position: relative
+      color: #fefefe
+      font-size: 18px
+      font-weight: 400
+      line-height: 40px
+      text-decoration: none
+      margin-right: 50px
+      &:after
+        content: ""
+        position: absolute
+        height: 12px
+        width: 1px
+        background-color: #ffffff
+        display: block
+        right: -25px
+        top: 15px
+  &-phone
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &__phoneicon
+      max-width: 18px
+      margin-right: 6px
+    &__phone
+      color: #fefefe
+      font-size: 18px
+      font-weight: 400
+      line-height: 40px
+      text-decoration: none
+      text-transform: uppercase
+      &--bold
+        font-weight: 700
+@media screen and (min-width: 992px)
+  .fa
+    &:hover
+      background: $secondary-color
+@media screen and (max-width: 991px)
+  .address 
+    &__text
+      font-size: 15px
+      line-height: 1
+  .fa
+    width: 24px
+    height: 24px
+    font-size: 15px
+  .contacts
+    flex-direction: column
+    &-email
+      &__email
+        font-size: 15px
+        line-height: 1
+        margin-right: 0px
+        flex-basis: 90%
+        &:after
+          display: none
+    &__phone
+      font-size: 15px
+      line-height: 1
+      flex-basis: 90%
+  .socials
+      padding-bottom: 20px
+@media screen and (max-width: 768px)
+  .footer
+    &-block
+      flex-direction: column
+      justify-content: flex-start
+  .address 
+    margin-bottom: 20px
+    &__text
+      font-size: 15px
+      line-height: 1
+  .contacts
+    &__email
+      font-size: 15px
+      line-height: 1
+      &::after
+        top: 1px
+    &__phone
+      font-size: 15px
+      line-height: 1
+@media screen and (max-width: 320px)
+  .footer
+    &-block
+      padding: 30px 0
+  .contacts
+    flex-wrap: wrap
+    &__emailicon
+      margin-right: 20px
+      margin-bottom: 10px
+    &__email
+      width: 80%
+      margin-right: 0
+      margin-bottom: 10px
+      &::after
+        display: none
+    &__phoneicon
+      margin-right: 20px
+    &__phone
+      flex-basis: 80%

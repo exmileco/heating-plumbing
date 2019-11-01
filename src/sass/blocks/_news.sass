@@ -1,0 +1,145 @@
+.news
+  background-color: #f1f1f1
+  margin-top: 147px
+  padding-bottom: 70px
+  &-block
+    padding-top: 67px
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    &__label
+      position: absolute
+      top: -29px
+      left: -33px
+      padding: 15px 55px
+      +prox_bold
+    &__button
+      margin: 0 auto
+      display: block
+      padding: 15px 42px
+      color: #020202
+      font-size: 20px
+      font-weight: 400
+      line-height: 28px
+      text-transform: uppercase
+      margin-top: 67px
+  &-articles
+    display: flex
+    justify-content: center
+    align-items: center
+  &-link
+    text-decoration: none
+    display: block
+    flex-basis: 30%
+    padding-right: 20px
+    padding-top: 20px
+    &:last-child 
+      padding-right: 0
+    &:hover
+      .news-subsection__title
+        cursor: pointer
+        text-decoration: underline
+      .news__descr
+        cursor: pointer
+        text-decoration: underline
+  &-article
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+  &__image
+    max-width: 377px
+    margin-bottom: 24px
+  &__descr
+    text-decoration: none
+    max-width: 323px  
+    opacity: 0.83
+    color: #020202
+    font-size: 18px
+    font-weight: 400
+    line-height: 28px
+  &-subsection
+    display: flex
+    justify-content: flex-start
+    margin-bottom: 11px
+    &__title
+      text-decoration: none
+      padding-right: 64px
+      color: #020202
+      font-size: 20px
+      font-weight: 700
+      line-height: 28px
+      text-transform: uppercase
+    &__date
+      color: #010101
+      font-size: 16px
+      font-weight: 300
+      line-height: 28px
+      text-transform: uppercase
+    &__marked
+      background-color: $secondary-color
+      +prox_bold
+@media screen and (max-width: 1200px)
+  .news
+    &-articles
+      flex-wrap: wrap
+      justify-content: space-around
+    &__image
+      max-width: 284px
+@media screen and (max-width: 768px)
+  .news
+    &-block
+      padding-top: 10px
+      padding-bottom: 10px
+      &__button
+        padding: 10px 30px
+        font-size: 1em
+      &__label
+        position: relative
+        margin: auto
+        font-size: 16px
+        padding: 10px 30px
+        top: -33px
+        text-align: center
+    &-link
+      padding-top: 10px
+      padding-right: 10px
+    &__image
+      max-width: 100%
+@media screen and (max-width: 567px) 
+  .news
+    margin-top: 70px
+    &-article
+      padding-right: 0
+      flex-basis: 100%
+      align-items: center
+    &-subsection
+      &__title
+        padding-right: 30px
+    &__descr
+      margin-bottom: 20px
+    &-block
+      padding-bottom: 20px
+      &__label
+        max-width: 135px
+        font-size: 13px
+        padding: 8px 35px
+        top: -21px
+        left: 5px
+    &__image
+      max-width: 320px
+      margin: auto
+      padding-bottom: 10px
+@media screen and (max-width: 320px) 
+  .news 
+    margin-top: 50px
+    margin-bottom: 50px
+    &-block
+      &__button
+        padding: 8px 18px
+        font-size: 0.8em
+    &__image
+      max-width: 310px
+      margin: auto

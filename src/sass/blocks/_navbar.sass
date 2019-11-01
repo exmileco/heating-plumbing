@@ -1,0 +1,196 @@
+.navbar
+  background-image: url('../img/navbar/navbar-bg.png')
+  background-position: right center
+  background-size: 41%
+  background-repeat: repeat-Y
+  background-color: #ffffff
+  padding: 6px 0 8px 0
+  &-block
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    color: $text-color
+    +prox-reg
+  &__logo
+    max-width: 50px
+    margin-right: 110px
+  &-menu
+    &__list
+      padding: 0
+      padding-right: 86px
+    &__item
+      font-size: 16px
+      letter-spacing: 1px
+      color: $text-color
+      padding: 0px 26px
+      position: relative
+      transition: ease-in
+      & a
+        position: relative
+        cursor: pointer
+        line-height: 1
+        text-decoration: none
+        color: $text-color
+    &__contacts
+      display: none
+      align-items: center
+    &__phoneicon
+      padding-right: 7px
+    &__phone
+      color: $text-color
+      font-size: 18px
+      font-weight: 400
+      line-height: 40px
+      text-decoration: none
+      padding-right: 39px
+    &__phonebold
+      font-weight: 700
+    &__button
+      color: #030303
+      font-size: 14px
+      font-weight: 400
+      padding: 7px 15px
+      margin-top: 4px
+@media screen and (max-width: 1400px)
+  .navbar
+    background: none
+@media screen and (max-width: 1200px)
+  .navbar
+    background: none
+    &-block
+      justify-content: space-between
+    &__logo
+      margin-right: 35px
+    &-menu
+      &__list
+        padding-right: 35px
+      &__item
+        padding: 0px 16px
+      &__phone
+        padding-right: 15px
+        font-size: 15px
+@media screen and (min-width: 992px)
+  .navbar
+    &-menu
+      &__list
+        display: flex
+        flex-direction: row
+        list-style: none
+      &__item
+        a
+          transition: width 0.3s ease-out
+          &:hover
+            color: $secondary-color
+            &:after
+              width: 100%
+          &:focus
+          &:after
+            width: 100%
+          &:after
+            content: ""
+            display: block
+            position: absolute
+            left: 0
+            width: 0
+            height: 2px
+            background-color: $secondary-color
+            transition: width 0.3s ease-out
+        &:before
+          content: ""
+          position: absolute
+          height: 12px
+          width: 1px
+          background-color: #d9d9d9
+          display: block
+          left: 0
+          top: 2px
+        &:first-child:before
+          display: none
+      &__contacts
+        display: flex
+@media (max-width: 991px)
+  .navbar
+    background: none
+    &-menu
+      &__button
+        margin-right: 20px
+      &__list
+        position: fixed
+        left: 60px
+        top: 75px
+        width: 60%
+        height: 300px
+        background-color: rgba(#fff, 1)
+        line-height: 50px
+        color: #ffffff
+        +prox-bold
+        text-transform: uppercase
+        display: none
+        z-index: 5
+        &-active
+          display: flex
+          flex-direction: column
+          align-items: center
+          position: absolute
+          top: 75px
+          right: 60px
+          z-index: 3
+          list-style: none
+          margin: auto
+
+    /* Бургер */
+  .menu
+    &-icon
+      position: relative
+      width: 30px
+      height: 5px
+      background-color: $secondary-color
+      &:before 
+        position: absolute
+        right: 0px
+        top: -10px
+        content: ''
+        width: 30px
+        height: 5px
+        background-color: $secondary-color
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+      &:after 
+        position: absolute
+        right: 0
+        top: 10px
+        content: ''
+        width: 30px
+        height: 5px
+        background-color: $secondary-color
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+      &-wrapper 
+        position: absolute
+        width: 42px
+        height: 42px
+        display: flex
+        justify-content: center
+        align-items: center
+        top: 20px
+        right: 20px
+        z-index: 5
+      &-active 
+        background-color: transparent
+        &:before 
+          transform: rotate(45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+        &:after 
+          transform: rotate(-45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+@media (max-width: 768px)
+  .navbar
+    background: none
+@media (max-width: 567px)
+  .navbar
+    background: none
+@media (max-width: 320px)
+  .navbar
+    background: none

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,aAAU;EACR,IAAI;EACJ,GAAG;EACH,GAAG;EACH,GAAG;EACH,EAAE;IACA,yBAAyB,EAAE,mCAAmC;;EAGhE,IAAI;IACF,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,yBAAyB;;EAGtC,GAAG;IACD,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,wBAAwB;;EAGrC,GAAG;IACD,SAAS,EAAE,uBAAuB;;EAGpC,GAAG;IACD,SAAS,EAAE,uBAAuB;;EAGpC,EAAE;IACA,SAAS,EAAE,oBAAoB;;;;AAInC,AAAA,cAAc,CAAC;EACb,cAAc,EAAE,aAAa;CAC9B",
+    "sources": [
+        "../sass/animate/bouncing_entrances/bounceInRight.scss"
+    ],
+    "names": [],
+    "file": "bounceInRight.css"
+}
