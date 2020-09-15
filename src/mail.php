@@ -18,7 +18,7 @@ $email = urldecode($phone);
 $name = trim($name);
 $phone = trim($phone);
 
-if (mail("exmile.co@gmail.com", "Заявка с сайта", "ФИО:".$name.". E-mail: ".$phone ,"From: inmailer@coffeenglish.com \r\n"))
+if (mail("example@gmail.com", "Заявка с сайта", "ФИО:".$name.". E-mail: ".$phone ,"From: example2@mail.com \r\n"))
  {     
   $message = "Сообщение успешно отправлено!"; 
   echo "Сообщение успешно отправлено. Имя: " . $name . " телефон: " . $phone;
